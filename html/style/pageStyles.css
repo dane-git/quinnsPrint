@@ -44,7 +44,7 @@ img {
   /* filter: opacity(10%); */
 }
 
-/******************************TOP NAV INSERT *****************************/
+/**********TOP NAV INSERT*********************/
 
 .topnav {
   overflow: hidden;
@@ -81,7 +81,7 @@ img {
   display: none;
 }
 
-/******************************TOP NAV INSERT *****************************/
+/***********TOP NAV INSERT ***********END*****/
 
 .main-top {
   font-family: "futura-pt";
@@ -99,15 +99,14 @@ img {
 
 .div-top {
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   top: 53%;
   box-sizing: border-box;
   transform: translatey(-50%);
-  left: 60px;
-  right: 60px;
+  left: 30px;
+  right: 30px;
   width: auto;
   margin: 0 auto;
   max-width: 1880px;
@@ -119,7 +118,7 @@ img {
   /* font-family: 'griphite_black_personal_useRg'; */
   font-family: var(--f1);
   max-width: 880px;
-  font-size: 6vw;
+  font-size: 8vw;
   text-transform: uppercase;
   letter-spacing: 0.0em;
   font-weight: 500;
@@ -148,7 +147,7 @@ h2 {
   padding-right: 0;
   padding-bottom: 0em;
   font-family: var(--f5);
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 1.2em;
   text-transform: none;
   letter-spacing: 0.06em;
@@ -182,7 +181,7 @@ h2 {
   padding-right: 0.02em;
   max-width: 50%;
   margin: auto;
-  font-size: 1.5em;
+  font-size: 2.5em;
   border-radius: 15px;
   margin-left: 1px;
   margin-right: 1px;
@@ -383,7 +382,148 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
-/*******@MEDIA*************/
+/*******@MEDIA**********************************/
+
+/********************LANDSCAPE*******************/
+
+@media screen and (orientation: landscape) {
+  .main-top {
+    font-family: "futura-pt";
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    background: url("../images/screenPrintHands70.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-top {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 55%;
+    box-sizing: border-box;
+    transform: translatey(-50%);
+    left: 5px;
+    right: 5px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 1880px;
+    max-height: 100vh;
+  }
+  #page-header {
+    /* font-family: 'kaushan_scriptregular'; */
+    /* font-family: 'griphite_black_personal_useRg'; */
+    font-family: var(--f1);
+    max-width: 980px;
+    font-size: 8vw;
+    text-transform: uppercase;
+    letter-spacing: 0.0em;
+    font-weight: 500;
+    font-style: normal;
+    /* color: #fff; */
+    line-height: 1em;
+    margin-top: 0em;
+    display: inline-block;
+    /* background-color: rgba(0,0,0,0.02);
+    border-radius: 55px; */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    padding-left: 0.2em;
+    padding-right: .15em;
+    padding-bottom: 1px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    max-width: 1800px;
+    /* text-rendering: optimizeLegibility; */
+    text-align: center;
+    margin: 0;
+    margin-top: -0.4em;
+    margin-bottom: 0em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0em;
+    font-family: var(--f5);
+    font-size: 5vw;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0,0,0,0.3); */
+    /* color: #fff; */
+    display: inline-block;
+  }
+  .push-left {
+    padding-right: 1.5em;
+  }
+  .push-right {
+    padding-left: 1.5em;
+  }
+  .extra {
+    padding: 1px;
+  }
+  .text-content {
+    /* background-color: rgba(0,0,0,0.1); */
+    padding-left: 0 0.02em;
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: rgba(0,0,0,0.2); */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    padding-right: 0.02em;
+    max-width: 90%;
+    margin: auto;
+    font-size: 2.5em;
+    border-radius: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin: auto;
+    line-height: 1.0em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-family: var(--f11);
+  }
+  .mail {
+    margin-top: 1em;
+  }
+  .mail a {
+    padding: 1.15em 1.5em 1.15em 1.55em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    /* margin-left: 0; */
+    transition: color 170ms ease-in-out;
+    border-color: 170ms ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .mail a:hover {
+    background-color: ghostwhite;
+    color: rgb(70, 70, 70);
+  }
+  @media only screen and (max-width: 800px) {
+    #page-header {
+      font-size: 7vw;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    h2 {
+      font-size: 4.5vw
+    }
+  }
+}
+
+/**********AT MEDIA ORIENTATION LANDSCAPE END*****/
 
 @media only screen and (max-width: 900px) {
   .text-content {
@@ -409,9 +549,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+  #page-header {
+    font-size: 12vw;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  h2 {
+    font-size: 7vw
+  }
   .text-content {
-    font-size: 1.0em;
+    line-height: 1.2em;
+  }
+  #exposition {
+    font-size: 1.4em;
   }
 }
 
@@ -452,6 +603,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .form-submit {
     flex: 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-content {
+    font-size: 1.0em;
   }
 }
 
