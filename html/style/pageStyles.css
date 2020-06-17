@@ -556,13 +556,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 40px;
   }
   h2 {
-    font-size: 7vw
+    font-size: 5vw
   }
   .text-content {
     line-height: 1.2em;
   }
   #exposition {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
