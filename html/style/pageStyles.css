@@ -10,12 +10,32 @@
   --f9: 'refresh_screenregular';
   --f10: 'wetpaintregular';
   --f11: 'tenali_ramakrishnaregular';
+  --c1: rgb(90, 103, 107);
+  --c2: rgb(70, 83, 97);
+  --c3: rgb(60, 83, 97);
+  --c4: rgb(60, 73, 97);
+  --c5: rgb(60, 73, 87);
+  --c6: #2E3844;
+  --c21: rgb(70, 79, 92);
+  --c22: rgb(67, 75, 87);
+  --c01: rgb(171, 195, 203);
+}
+
+.bg-mine {
+  background-color: var(--c2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 body {
-  background-color: rgb(255, 153, 57);
+  background-color: rgb(90, 103, 107);
   color: ghostwhite;
-  background: rgba(19, 19, 19, 0.6);
 }
 
 img {
@@ -66,20 +86,15 @@ img {
 .main-top {
   font-family: "futura-pt";
   text-rendering: optimizeLegibility;
-  /* position: relative; */
-  padding: 40px 60px 60px 60px;
   box-sizing: border-box;
-  /* height: 100vh; */
   text-align: center;
   position: relative;
   margin: 0;
-  /* min-height: calc(100vh - 60px); */
   min-height: 100vh;
-  background: url("../images/logo_2.png") center/cover no-repeat;
+  background: url("../images/screenPrintHands70.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 20px; */
 }
 
 .div-top {
@@ -96,6 +111,7 @@ img {
   width: auto;
   margin: 0 auto;
   max-width: 1880px;
+  max-height: 100vh;
 }
 
 #page-header {
@@ -103,7 +119,7 @@ img {
   /* font-family: 'griphite_black_personal_useRg'; */
   font-family: var(--f1);
   max-width: 880px;
-  font-size: 10vw;
+  font-size: 6vw;
   text-transform: uppercase;
   letter-spacing: 0.0em;
   font-weight: 500;
@@ -132,7 +148,7 @@ h2 {
   padding-right: 0;
   padding-bottom: 0em;
   font-family: var(--f5);
-  font-size: 12vw;
+  font-size: 3vw;
   line-height: 1.2em;
   text-transform: none;
   letter-spacing: 0.06em;
@@ -146,11 +162,15 @@ h2 {
 }
 
 .push-left {
-  padding-right: 0.5em;
+  padding-right: 1.5em;
 }
 
 .push-right {
   padding-left: 1.5em;
+}
+
+.extra {
+  padding: 1px;
 }
 
 .text-content {
@@ -162,7 +182,7 @@ h2 {
   padding-right: 0.02em;
   max-width: 50%;
   margin: auto;
-  font-size: 1.1em;
+  font-size: 1.5em;
   border-radius: 15px;
   margin-left: 1px;
   margin-right: 1px;
@@ -200,8 +220,9 @@ h2 {
 }
 
 .three-box-grid {
+  margin: auto;
   display: grid;
-  background-color: blue;
+  background-color: var(--c01);
   padding: 10px;
   grid-template-areas: "header header header" "left middle right";
   grid-gap: 10px;
@@ -209,7 +230,7 @@ h2 {
 
 .two-box-grid {
   display: grid;
-  background-color: blue;
+  background-color: var(--c01);
   padding: 10px;
   grid-template-areas: "left middle";
   grid-gap: 10px;
@@ -223,30 +244,38 @@ h2 {
 
 .grid-box-1 {
   grid-area: left;
-  background-color: rgb(60, 60, 180);
+  background-color: var(--c21);
 }
 
 .grid-box-2 {
   grid-area: middle;
-  background-color: rgb(80, 80, 180);
+  background-color: var(--c21);
 }
 
 .grid-box-3 {
   grid-area: right;
-  background-color: rgb(100, 100, 200);
+  background-color: var(--c21);
 }
 
 .grid-header {
   grid-area: header;
-  background-color: rgb(50, 50, 150);
+  background-color: var(--c6);
   padding: 30px;
   text-align: center;
   font-size: 35px;
 }
 
 .company-manifesto {
-  background-color: green;
+  background-color: var(--c6);
+  border-right: 10px solid var(--c01);
+  border-left: 10px solid var(--c01);
+  /* border-right: 50px solid red; */
   padding: 20px;
+}
+
+.company-manifesto>h3 {
+  text-transform: uppercase;
+  font-family: var(--f1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -259,8 +288,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  background-color: grey;
-  padding: 10px;
+  background-color: var(--c2);
+  border-right: 10px solid var(--c01);
+  border-left: 10px solid var(--c01);
+  border-top: 5px solid var(--c01);
+  border-bottom: 2px solid var(--c01);
   margin: 0;
   text-align: center;
 }
@@ -268,10 +300,13 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   max-width: 1200px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .form-container {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--c6);
+  border-right: 10px solid var(--c01);
+  border-left: 10px solid var(--c01);
   display: grid;
   padding: 10px;
   grid-template-areas: "header header" "contact message" "submit-it submit-it";
@@ -303,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-name {
   grid-area: name;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 .form-email {
@@ -321,6 +356,63 @@ h1, h2, h3, h4, h5, h6 {
   justify-self: center;
   display: grid;
   grid-template-areas: "top" "bottom";
+}
+
+.navbar-brand {
+  font-family: var(--f1);
+  font-size: 1.7em
+}
+
+.smaller {
+  font-size: .8em;
+}
+
+.no-decoration {
+  margin: auto;
+  list-style-type: none;
+  text-align: left;
+}
+
+#map {
+  width: 100%;
+  height: 80%;
+  background-color: red;
+}
+
+.no-show {
+  visibility: hidden;
+}
+
+/*******@MEDIA*************/
+
+@media only screen and (max-width: 900px) {
+  .text-content {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  #page-header {
+    font-size: 7vw;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  h2 {
+    font-size: 4.5vw
+  }
+  .text-content {
+    font-size: 1.3em;
+  }
+  .div-top {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-content {
+    font-size: 1.0em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -363,6 +455,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*
 @media only screen and (max-width: 550px) {
   /* h2 {
     font-size: 12vw;
@@ -372,38 +465,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 6vw;
     color: orange;
   } */
-  .push-right {
-    padding-left: 0px;
-  }
+
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    font-size: 1.2em;
-  }
-  .text-content {
-    max-width: 80%;
-    font: red;
-  }
-  h2 {}
-  .topnav {
-    flex-wrap: wrap;
-  }
-  .topnav>a {
-    flex: 1 1;
-  }
-  .mail {
-    margin-top: 1.5em;
-  }
-  #exposition {
-    font-size: 4vw;
-  }
-  #page-header {
-    margin-bottom: 14px;
-    padding-bottom: 7px;
-  }
-}
-
+/* 
 @media only screen and (max-width: 400px) {
   body {
     font-size: 1.2em;
@@ -434,20 +499,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 7vw;
     margin-bottom: 14px;
   }
-}
+} */
 
-@media only screen and (min-width: 900px) {
-  #exposition {
-    font-size: 2vw;
-    line-height: 1.1em;
-  }
-}
-
-@media only screen and (min-width: 1199px) {
-  #page-header {
-    font-size: 70px;
-  }
-  #summation {
-    font-size: 50px;
-  }
-}
+/* 
+Offset Printing 
+Digital Printing 
+Screen Printing 
+Promotional Products /Advertising Specialties T-Shirts/Athletic Apparel 
+Labels 
+Yard Signs & Banners 
+Wide Format Printing */

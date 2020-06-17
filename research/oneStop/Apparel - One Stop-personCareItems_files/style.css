@@ -1,0 +1,447 @@
+.row {
+    /* overrides materialize's bottom margin */
+    margin-bottom: 0px;
+}
+
+h1, h2, h3{
+    font-family: "Gotham-Medium", Arial, Helvetica, sans-serif;
+    margin: 20px 0 10px;
+    color: #424242
+}
+
+h4, h5, h6 {
+    font-family: "Gotham-Light", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    color: #424242
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+p, body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+a {
+    color: #424242;
+    transition: color .15s;
+}
+
+a:hover,
+a:active {
+    color: #1e88e5;
+}
+
+label {
+    font-size: 1rem;
+    color: #212121;
+}
+
+input[type="range"] {
+    margin: 0;
+}
+
+div#loader {
+    font-size: 20px;
+    font-weight: bold;
+    background: #eeeeee;
+    border: 2px solid #bdbdbd;
+    padding: 30px 50px;
+    z-index: 5;
+}
+
+.autocomplete-content {
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.input-field {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.inline_fields input {
+    width: auto !important;
+}
+
+.phone_number {
+    white-space: nowrap;
+}
+
+label span {
+    color: #212121;
+}
+
+
+td.first_col {
+    width: 25%;
+}
+
+td.top {
+    vertical-align: top;
+}
+
+/* form errors */
+div.errors{
+    margin:10px 30px;
+    border:2px solid #b71c1c;
+    color:#b71c1c;
+    padding:20px 40px;
+}
+
+tr.has_error {
+    border: 1px solid #b71c1c;
+}
+
+.subheader {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.sale_img_width {
+    width: 100%;
+    max-width: 800px;
+}
+
+.sales_nav {
+    padding-top: 15px;
+}
+
+
+.remove_side_margins {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.link {
+    color: #1e88e5!important;
+}
+
+.link:hover {
+    color: #90caf9!important;
+}
+
+.login_button {
+    font-family: 'Gotham-Book';
+}
+
+.messages_container {
+    border: 2px solid #ffee58;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #424242;
+    padding-left: 3rem;
+}
+
+.messages_container .message.error {
+    color: #aa0000;
+}
+
+.close_message {
+    color: #616161;
+    padding: .5rem;
+    margin-left: -3rem;
+}
+
+.close_message i:hover {
+    cursor: pointer;
+}
+
+.loading_icon {
+    width: 12rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.progress {
+    background-color: #bbdefb;
+}
+
+.progress .indeterminate {
+    background-color: #0d47a1;
+}
+
+a.btn-flat,
+button.btn-flat,
+.btn-flat input {
+    font-family: "Gotham-Medium", Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+
+.btn-flat.blue.darken-4, input.waves-button-input, .cancel-btn {
+    color: #ffffff;
+}
+
+.row, .col {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.brands_subhead {
+    padding-left: 10px;
+    font-family: "Gotham-Medium";
+}
+
+
+.body_text {
+    font-family: "Gotham-Light", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* popup */
+div.container form.popup_form {
+    background:#f5f5f5; /* grey lighten-4 */
+    padding:50px;
+    border:1px solid gray;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+/**************
+ * TABLE PAGING
+ **************/
+div.pager{
+    margin: 10px 0 0 0;
+}
+div.pager.bottom{
+    margin: 0 0 20px 0;
+}
+
+div.pager .pagecount_right, div.pager.bottom.pagecount_right {
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    div.pager .pagecount_right, div.pager.bottom.pagecount_right {
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+div.pager ul.pagination {
+    margin: 0;
+}
+
+div.pager span.prev,
+div.pager span.next,
+div.pager span.first,
+div.pager span.last{
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none; /* opera */
+    user-select: none;
+}
+div.pager input.pagedisplay{
+    border: none !important;
+    height: 1.05rem;
+    color: #212121 !important;
+    font-weight: bold;
+    padding: 0 5px;
+    width:40px;
+    text-align: center;
+}
+
+div.pager .pagesize_left {
+    padding-bottom: 5px;
+}
+
+div.pager .pagesize_left span {
+    font-family: "Gotham-Light", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.05rem;
+}
+
+div.pager .pagesize_left .select-wrapper {
+    width: 100px;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+div.pager .pagesize_left .select-wrapper input.select-dropdown {
+    width: 100px;
+    height: 2rem;
+}
+
+/* font selector */
+.fontSelect span {
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.fontSelect .material-icons {
+    vertical-align: bottom;
+}
+
+.fontSelectUl {
+    width: 200px;
+    background: #f9f9f9;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+.fontSelectUl li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    color: black;
+    font-size: 14px;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+
+.fontSelectUl li:last-child {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.fontSelectUl li:hover {
+    background: #dddddd;
+}
+
+/* a hacky fix for setting the carousel height responsively, due to a materialize bug */
+/* until the bug is fixed, if the layout width changes at all, the values below can be recalculated as follows: */
+/* calc(the width of the banner = window width * fraction of grid the banner is using) / ratio of banner = ~ 2.627 / 1 */
+.carousel {
+    height: calc(100vw * .597 / 2.627);
+}
+
+/*  medium / large grid breakpoint */
+@media screen and (max-width: 992px) {
+    .carousel {
+        height: calc(100vw * .716 / 2.627);
+    }
+    .sku_info .videos {
+        width: 100% !important;
+    }
+}
+
+/* small / medium grid breakpoint */
+@media screen and (max-width: 600px) {
+    .carousel {
+        height: calc(100vw / 2.627);
+    }
+}
+/* end hack */
+
+.carousel .indicators .indicator-item {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #757575;
+    margin: 12px 4px;
+}
+
+.carousel .indicators .active {
+    border-width: 1px;
+}
+
+/* body content padding */
+
+div.catalog_body {
+    margin-left: 14vw !important;
+    margin-right: 14vw !important;
+}
+
+@media screen and (max-width: 600px) {
+    div.catalog_body {
+        margin-left: 0vw !important;
+        margin-right: 0vw !important;
+    }
+}
+
+div.catalog_header {
+    margin-left: 10vw !important;
+    margin-right: 11vw !important;
+}
+
+@media screen and (max-width: 600px) {
+    div.catalog_header {
+        margin-left: 0vw !important;
+        margin-right: 0vw !important;
+    }
+}
+
+tr {
+    border-bottom: none;
+}
+
+.bottom_bordered tr {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.cbp_image {
+    width: 80%;
+}
+
+span.badge {
+    margin-left: 0px;
+    font-size: .7rem;
+    line-height: 19px;
+    height: 18px;
+}
+
+.flex_page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.flex_page_content {
+    flex: 1;
+}
+
+.bannerVideoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    background-color:black;
+    border-radius: 5px;
+}
+
+.bannerVideoWrapper iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    vertical-align: center;
+}
+
+.bannerVideoWrapper video {
+    border-radius: 5px;
+    vertical-align: center;
+}

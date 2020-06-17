@@ -1,0 +1,265 @@
+.cart-info {
+    font-size: 0.88rem;
+    margin-top: 0.75rem;
+}
+
+.favorites_label {
+    color: #212121;
+}
+.header {
+    margin: 0.5rem;
+}
+
+.header_cart_quantity {
+    color: #424242;
+}
+
+i.cart {
+    color: #424242;
+}
+
+i.favorite {
+    color: #f44336 !important;
+}
+
+.main_logo {
+    width: 57%;
+    height: auto;
+    max-height: 80px;
+}
+
+.main_logo_mobile {
+    width: 90%;
+    height: auto;
+}
+
+.menu {
+    padding: 0.35rem !important;
+}
+
+i.menu {
+    color: white;
+}
+
+i.search {
+    color: white;
+}
+
+i.user {
+    color: #424242;
+}
+
+.nav_tab {
+    color: white;
+    font-family: "Gotham-Book";
+    font-size: 0.9rem;
+}
+.nav_tab:hover,
+.nav_tab:active {
+    color: #ddd;
+}
+
+.nav_tab_div {
+    padding: 0 0 !important;
+}
+
+.nav_bar {
+    overflow: hidden;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-links {
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-links a {
+    float: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-links {
+    display: block;
+  }
+
+.nav_bar_light {
+    color: white;
+    font-family: "Gotham-Book";
+    font-size: 0.9rem;
+}
+
+.nav_bar_dark {
+    color: black;
+    font-family: "Gotham-Book";
+    font-size: 0.9rem;
+}
+
+.search_input {
+    height: 2rem !important;
+    font-family: "Gotham-Light";
+    font-weight: 900;
+    padding-left: 10px !important;
+    background-color: white !important;
+    border-radius: 2px !important;
+    margin: 0 !important;
+}
+
+.search_input + .autocomplete-content.dropdown-content {
+    margin-top: 32px;
+}
+
+.mobile_search_input + .autocomplete-content.dropdown-content {
+    margin-top: 45px;
+}
+
+i.mobile_cart {
+    color: white;
+}
+
+i.mobile_user {
+    color: white;
+}
+
+.mobile_header_cart_quantity {
+    color: white;
+}
+
+.mobile_header_cart_total {
+    color: #66bb6a;
+}
+
+.mobile_search_input {
+    font-family: "Gotham-Light";
+    font-weight: 900;
+    padding-left: 10px !important;
+    border: 1px solid #757575 !important;
+    border-radius: 5px !important;
+}
+
+.mobile_menu_white_text {
+    color: white;
+}
+
+.flex_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification_bar {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.notification_bar .notification_display {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notification_bar .notification_display .url {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 1rem;
+}
+
+.notification_bar .notification_display .flex_div {
+    align-items: center;
+}
+
+.notification_bar .notification_display .message {
+    flex: 1;
+}
+
+.notification_bar .notification_display .buttons .disabled {
+    visibility: hidden;
+}
+
+.cart-height {
+    height: 1.5em;
+}
+
+#close_button {
+    float: right;
+}
+
+.header-search-button {
+    position: absolute;
+    right: -7px;
+    top: 2px;
+    padding: 0px 10px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.header-search-icon-desktop {
+    position: absolute;
+    right: -15px;
+    top: 4px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.header-search-icon-mobile {
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    padding: 0px 10px;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .notification_bar .notification_display {
+        width: 100%;
+    }
+
+    #notification_display {
+        float: left;
+    }
+
+    #mobile_buttons .notification_btn.prev {
+        margin-right: 3em;
+        margin-left: -20px;
+    }
+
+    #next_text, #prev_text {
+        font-size: 12px;
+        display: inline;
+        vertical-align: top;
+    }
+
+    #mobile_click_here {
+        float: right;
+        margin-top: 9px;
+    }
+
+    #mobile_buttons {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .hide-header-search-button {
+      display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .hide-icon-search-button {
+      display: none !important;
+    }
+}

@@ -1,0 +1,25 @@
+h3 {
+    font-size: 1.4rem;
+}
+
+.login {
+    margin-top: .5rem;
+}
+
+.margin_top_bottom {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.margin_bottom {
+    margin-bottom: 2rem !important;
+}
+
+.login_buttons {
+    color: white;
+}
+
+.vertical_divider {
+    height: 60vh;
+    border-right: 1px solid #bdbdbd;
+}
