@@ -267,6 +267,13 @@ h2 {
   background-color: var(--c21);
 }
 
+/*NOTE NEW*/
+
+.three-box-grid>.grid-box-1 {
+  background: url("../../assets/pics/screen-printing-ink-prints-70.png") center/cover no-repeat;
+  color: ghostwhite;
+}
+
 .grid-box-2 {
   grid-area: middle;
   background-color: var(--c21);
