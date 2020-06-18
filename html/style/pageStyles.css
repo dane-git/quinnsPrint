@@ -192,6 +192,11 @@ h2 {
   font-family: var(--f11);
 }
 
+.company-name {
+  font-family: var(--f1);
+  text-transform: uppercase;
+}
+
 .mail {
   margin-top: 1em;
 }
@@ -239,6 +244,7 @@ h2 {
   padding: 10px;
   height: 300px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .grid-box-1 {
@@ -262,19 +268,35 @@ h2 {
   padding: 30px;
   text-align: center;
   font-size: 35px;
+  border-radius: 5px;
 }
 
 .company-manifesto {
-  background-color: var(--c6);
+  background-color: var(--c01);
   border-right: 10px solid var(--c01);
   border-left: 10px solid var(--c01);
   /* border-right: 50px solid red; */
-  padding: 20px;
+  padding: 0px;
+  /* border-radius: 20px; */
+  /* background-clip: padding-box; */
+  /* background-clip: border-box; */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+  /* background-clip: content-box */
+}
+
+.inner {
+  background-color: var(--c6);
+  padding: 10px;
+  border-radius: 5px;
+  ;
 }
 
 .company-manifesto>h3 {
   text-transform: uppercase;
   font-family: var(--f1);
+  border-radius: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -294,6 +316,28 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid var(--c01);
   margin: 0;
   text-align: center;
+  /* border-radius: 55px; */
+  background-color: var(--c01);
+  border-right: 10px solid var(--c01);
+  border-left: 10px solid var(--c01);
+  /* border-right: 50px solid red; */
+  padding: 0px;
+  /* border-radius: 20px; */
+  /* background-clip: padding-box; */
+  /* background-clip: border-box; */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+  /* background-clip: content-box */
+}
+
+.inner {
+  background-color: var(--c6);
+  padding: 10px;
+  border-radius: 5px;
+  ;
+}
+
 }
 
 .main {
@@ -302,14 +346,23 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 
-.form-container {
-  background-color: var(--c6);
+.contact-us {
+  background-color: var(--c01);
   border-right: 10px solid var(--c01);
   border-left: 10px solid var(--c01);
+  /* border-right: 50px solid red; */
+  padding: 0px;
+}
+
+.form-container {
+  background-color: var(--c6);
+  padding: 10px;
+  border-radius: 5px;
   display: grid;
   padding: 10px;
   grid-template-areas: "header header" "contact message" "submit-it submit-it";
   grid-gap: 10px;
+  border-radius: 5px;
 }
 
 .form-title {
@@ -419,8 +472,8 @@ h1, h2, h3, h4, h5, h6 {
     /* font-family: 'kaushan_scriptregular'; */
     /* font-family: 'griphite_black_personal_useRg'; */
     font-family: var(--f1);
-    max-width: 980px;
-    font-size: 8vw;
+    max-width: 1680px;
+    font-size: 5vw;
     text-transform: uppercase;
     letter-spacing: 0.0em;
     font-weight: 500;
@@ -448,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 0;
     padding-bottom: 0em;
     font-family: var(--f5);
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1.2em;
     text-transform: none;
     letter-spacing: 0.06em;
@@ -511,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: ghostwhite;
     color: rgb(70, 70, 70);
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 850px) {
     #page-header {
       font-size: 7vw;
       margin-left: 40px;
@@ -520,95 +573,133 @@ h1, h2, h3, h4, h5, h6 {
     h2 {
       font-size: 4.5vw
     }
+    .text-content {
+      font-size: 20px;
+      ;
+    }
+  }
+  @media only screen and (max-width:750px) {
+    #page-header {
+      font-size: 5vw;
+    }
+    #summary {
+      font-size: 2vw;
+    }
+    .text-content {
+      font-size: 20px;
+      ;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    #page-header {
+      font-size: 5vw;
+    }
+    #summary {
+      font-size: 2vw;
+    }
+    .text-content {
+      font-size: 20px;
+      ;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #page-header {
+      font-size: 5vw;
+    }
+    #summary {
+      font-size: 2vw;
+    }
+    .text-content {
+      font-size: 15px;
+      ;
+    }
   }
 }
 
 /**********AT MEDIA ORIENTATION LANDSCAPE END*****/
 
-@media only screen and (max-width: 900px) {
-  .text-content {
-    max-width: 70%;
+@media screen and (orientation: portrait) {
+  @media only screen and (max-width: 900px) {
+    .text-content {
+      max-width: 70%;
+    }
   }
-}
-
-@media only screen and (max-width: 755px) {
-  #page-header {
-    font-size: 7vw;
-    margin-left: 40px;
-    margin-right: 40px;
+  @media only screen and (max-width: 755px) {
+    #page-header {
+      font-size: 7vw;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    h2 {
+      font-size: 4.5vw
+    }
+    .text-content {
+      font-size: 1.3em;
+    }
+    .div-top {
+      left: 10px;
+      right: 10px;
+    }
   }
-  h2 {
-    font-size: 4.5vw
+  @media only screen and (max-width: 650px) {
+    #page-header {
+      font-size: 12vw;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    h2 {
+      font-size: 5vw
+    }
+    .text-content {
+      line-height: 1.2em;
+    }
+    #exposition {
+      font-size: 1.3em;
+    }
   }
-  .text-content {
-    font-size: 1.3em;
+  @media only screen and (max-width: 600px) {
+    .three-box-grid {
+      grid-template-areas: "header" "left" "middle" "right";
+    }
+    .two-box-grid {
+      grid-template-areas: "left" "middle";
+    }
+    .form-container {
+      display: flex;
+      flex-basis: 320px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form-title {
+      flex-grow: 1;
+      width: 100%;
+    }
+    .form-user-contact {
+      flex: 1fr;
+      width: 70%;
+    }
+    input {
+      width: 100%;
+    }
+    .form-message {
+      margin-top: 20px;
+      min-width: 300px;
+      min-height: 150px;
+    }
+    .form-message textarea {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+    }
+    .form-submit {
+      flex: 1fr;
+    }
   }
-  .div-top {
-    left: 10px;
-    right: 10px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  #page-header {
-    font-size: 12vw;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  h2 {
-    font-size: 5vw
-  }
-  .text-content {
-    line-height: 1.2em;
-  }
-  #exposition {
-    font-size: 1.3em;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .three-box-grid {
-    grid-template-areas: "header" "left" "middle" "right";
-  }
-  .two-box-grid {
-    grid-template-areas: "left" "middle";
-  }
-  .form-container {
-    display: flex;
-    flex-basis: 320px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .form-title {
-    flex-grow: 1;
-    width: 100%;
-  }
-  .form-user-contact {
-    flex: 1fr;
-    width: 70%;
-  }
-  input {
-    width: 100%;
-  }
-  .form-message {
-    margin-top: 20px;
-    min-width: 300px;
-    min-height: 150px;
-  }
-  .form-message textarea {
-    width: 100%;
-  }
-  p {
-    text-align: center;
-  }
-  .form-submit {
-    flex: 1fr;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .text-content {
-    font-size: 1.0em;
+  @media only screen and (max-width: 500px) {
+    .text-content {
+      font-size: 13px;
+    }
   }
 }
 
